@@ -42,8 +42,12 @@ public class Splitter : MonoBehaviour
 
                     foreach (GameObject obj in objs)
                     {
-                        obj.AddComponent<Rigidbody>();
+                        Rigidbody rg = obj.AddComponent<Rigidbody>();
                         obj.AddComponent<MeshCollider>().convex = true; // only convex can be rigid
+                        
+                        // add explosion force
+                        rg.AddExplosionForce(100, obj.gameObject.transform.position, 50);
+
                         obj.layer = maskLayerNumber;
                     }
                 }
