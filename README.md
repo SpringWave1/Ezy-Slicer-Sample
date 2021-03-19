@@ -9,4 +9,4 @@ Sample code for Ezy-Slicer Usage. Reference: https://www.bilibili.com/video/BV1J
 - Change the matCross with specific shader to change the cutting face material. 
 
 ### Demo
-![image1](figs/fig)
+![image1](figs/figs.png)
